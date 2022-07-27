@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: grid;
+  /* 1 fraccion: 1fr */
+  grid-template-columns: repeat(2, 1fr); /*  1fr 1fr;  */
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  /* width: 100vh; */
+  height: 100vh;
+  background-color: #4C58E0
+  /* justify-content: center;
+  align-content: center; */
+
+  /* Justify content & items: propiedad padres */
+  /* justify-items: center;
+  align-items: center; */
+}
+.header__title {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 100%;
+  padding: 0 50px;
+  align-self: center;
+}
+.header__title h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.header__title p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: lighter;
+}
+.header__title button {
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fff;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #4C58E0;
+}
+.header__nav {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  /* grid-column: 2 / 3; -> ejemplo para colocarlo en la linea columna 2 y 3 */
+  /* Justify self: propiedad hijos */
+  justify-self: center;
+  align-self: center;
+}
+.header__nav ul {
+  list-style: none;
+}
+.header__nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+.header__nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__main__image {
+  width: 700px;
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+  align-self: center;
+  justify-self: center;
+}
+.header__main__image img {
+  width: 100%;
+}
+.header__secondary__image {
+  width: 100%;
+}
+.header__secondary__image img {
+  width: 300px;
+}
