@@ -1,6 +1,6 @@
 # Simple template
 
-HTML & CSS simple practice.
+HTML & CSS simple practice review in class.
 
 ## Preview
 
